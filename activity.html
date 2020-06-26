@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bowlby+One+SC" rel="stylesheet">
+    <style>
+    body {
+              background-color:rgb(78, 175, 182);
+              color:aliceblue;
+              padding:2rem;
+              margin:0;
+              font-family: 'Architects Daughter', cursive;
+              font-size: 12px;
+          }
+          h1 {
+              font-family: 'Bowlby One SC', cursive;
+              font-size: 2.8rem;
+              color: rgba(243, 246, 250, 0.658);
+              margin:0;
+          }
+          ol {
+              font-family: 'Architects Daughter', cursive;
+              font-size: 1.6rem;
+          }  
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <div class="first">
+    <h1>To-Do List</h1>
+    <ol>
+        <li>Wash Laundry</li>
+        <li>Clean Silver</li>
+        <li>Write Letters</li>
+        <li>Purchase Groceries</li>
+        <li>Retrieve Mail</li>
+        <li>Prepare Dinner</li>
+    </ol>
+    <ol>
+        <li>Integer</li>
+        <li>Floating-point number</li>
+        <li>Character</li>
+        <li>String</li>
+        <li>Boolean</li>
+        
+    </ol>
+</div>
+    <button id="shuffle-button">Shuffle</button>
+    <script>
+        // JavaScript here!
+        $( "button" ).click(function() {
+  $( "div.first" ).slideUp( 300 ).delay( 800 ).fadeIn( 400 );
+  $( "div.second" ).slideUp( 300 ).fadeIn( 400 );
+});
+    </script>
+</body>
+</html>

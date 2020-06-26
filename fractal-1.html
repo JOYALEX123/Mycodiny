@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Julia Fractals</title>
+</head>
+
+<style>
+  body {
+    background: black;
+    color: white;
+  }
+  canvas {
+    border: 1px solid white;
+  }
+</style>
+
+<body>
+  <h2></h2>
+  <canvas></canvas>
+</body>
+
+<!-- Import math.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.6.0/math.min.js"></script>
+
+<script>
+
+// The HTML elements we are using
+var header = document.querySelector('h2')
+var canvas = document.querySelector('canvas')
+var ctx = canvas.getContext('2d')
+
+// The size of our canvas
+var width = 200
+var height = 200
+
+// Set the size of our canvas
+canvas.width = width
+canvas.height = height
+
+// The XY coordinates of the mouse over the canvas
+var mouseX = 0
+var mouseY = 0
+
+</script>
+</html>

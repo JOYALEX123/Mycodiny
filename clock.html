@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Real-Time Clock</title>
+        <script>
+            var secs, mins, hrs, date,
+            setTime = function () {
+             date = new Date();
+             har = date.getHours();
+             mins = date.getMinutes();
+             secs = date.getSeconds();
+             document.body.innerHTML = `${hrs}:${mins}:${secs}`;
+            }
+            setInterval(setTime, 500);
+        </script>
+    </head>
+    <body>
+          
+
+
+    </body>
+</html>
